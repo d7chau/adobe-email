@@ -12,14 +12,26 @@
     /* (if smaller than 600px then run code)*/
     @media only screen and (max-width:600px){
       .container{
-        width: 480px;
+        width: 400px;
+      }
+      .flower-img{
+        padding-left: 40px;
+        padding-right: 40px;
       }
     }
 
-    /*  (if smaller than 480px then run code)*/
-    @media only screen and (max-width:480px){
+    /* Mobile (if smaller than 400px then run code)*/
+    @media only screen and (max-width:400px){
       .container{
         width: 100%;
+      }
+      .flower-img{
+        padding-left: 55px;
+        padding-right: 55px;
+      }
+      .address a{
+        text-decoration: none;
+        color: #707070;
       }
     }
   </style>
@@ -79,7 +91,7 @@
                   <table class="start-flower-table" align="center" cellspacing="0" cellpadding="0" border="0">
                     <tr>
                       <td>
-                        <img src="https://i.imgur.com/33nj1Qx.png" style="display: block; border: none; width:465px;" alt="Flowers in the shape of Adobe Creative Cloud logo"> 
+                        <img class="flower-img" src="https://i.imgur.com/33nj1Qx.png" style="display: block; border: none; width:465px;" alt="Flowers in the shape of Adobe Creative Cloud logo"> 
                       </td>
                     </tr>
                   </table>
@@ -187,7 +199,7 @@
                           and/or other countries. All other trademarks are the property of their respective owners.
                         </p>
                         <p style="color: #707070; padding-bottom:10px;">
-                          This is a marketing email from Adobe Inc, 343 Preston St, Ottawa, ON K1S 1N4. <a href="#" style= "color: #707070;">Click here</a> to 
+                          This is a marketing email from Adobe Inc, <span class="address">343 Preston St, Ottawa, ON K1S 1N4. </span><a href="#" style= "color: #707070;">Click here</a> to 
                           unsubscribe. Please review the <a href="#" style= "color: #707070;">Adobe Privacy Policy.</a>
                         </p>
                         <p style="color: #707070; padding-bottom:40px;">
