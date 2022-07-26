@@ -17,11 +17,17 @@
     </xml>
     <![endif]-->
 
-    <style type="text/css">
+    <style>
       /* Client-specific reset styles. */
       body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
       table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
       img { -ms-interpolation-mode: bicubic; }
+
+      /* Fixes addresses turning into links */
+      #id1 #id2 a[x-apple-data-detectors]{
+        color: inherit !important;
+        text-decoration: inherit !important;
+      }
 
       /* Desktop (if smaller than 600px then run code)*/
       @media only screen and (max-width:600px){
@@ -29,8 +35,7 @@
           width: 400px;
         }
         .flower-img{
-          padding-left: 40px;
-          padding-right: 40px;
+          width:340px;
         }
       }
 
@@ -39,12 +44,18 @@
         .container{
           width: 100%;
         }
-        .flower-img{
-          padding-left: 55px;
-          padding-right: 55px;
+        .adobe-icon{
+          display: block !important;
+          padding-left: 306px;
         }
         .save-btn{
           width:230px !important;
+        }
+        .flower-img{
+          width:314px;
+        }
+        .bullet-point{
+          padding-left: 0px !important;
         }
         .social-icons{
           width: 30px !important;
@@ -57,9 +68,9 @@
     </style>
   </head>
 
-<body style="background-color: #e4e5ea; margin:0;">
+<body id="id1" style="background-color: #e4e5ea; margin:0;">
   <!--Start HTML Email-->
-  <table width="100%" cellspacing="0" cellpadding="0" border="0" border-spacing ="0" style="background-color: #e4e5ea;" role="presentation">
+  <table id="id2" width="100%" cellspacing="0" cellpadding="0" border="0" border-spacing ="0" style="background-color: #e4e5ea;" role="presentation">
     <tr>
       <td>
         <!--Start Container-->
@@ -67,10 +78,10 @@
           <tr>
             <td>
               <!--Start Adobe Logo Row-->
-              <table class="adobe-logo-table" align="right" cellspacing="0" cellpadding="0" border="0" style="padding:0 10px 0 0" role="presentation">
+              <table class="adobe-logo-table" align="right" cellspacing="0" cellpadding="0" border="0" style="padding-right: 10px; background-color: #ffffff;" role="presentation">
                 <tr>
                   <td>
-                    <img src="https://i.imgur.com/NbmoZ5C.png" width="37" style="display: block; border: none;" alt="Adobe icon">
+                    <img class="adobe-icon" src="https://i.imgur.com/NbmoZ5C.png" width="36" style="display: block; border: none;" alt="Adobe icon">
                   </td>
                 </tr>
               </table>
@@ -118,9 +129,11 @@
                 <td>
                   <table class="start-flower-table" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
                     <tr>
+                      <td></td>
                       <td>
                         <img class="flower-img" src="https://i.imgur.com/33nj1Qx.png" width="465" style="display: block; border: none;" alt="Flowers in the shape of Adobe Creative Cloud logo"> 
                       </td>
+                      <td></td>
                     </tr>
                   </table>
                 </td>
@@ -137,27 +150,27 @@
                     </tr>
                     <tr>
                       <td>
-                        <table class="bullet-list" cellpadding="0" cellspacing="0" border="0"> 
+                        <table class="bullet-list" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
                           <tr>
-                              <td valign="top" style="padding-left: 22px;">&#8226;</td>
+                              <td class="bullet-point" valign="top" style="padding-left: 22px;">&#8226;</td>
                               <td style="padding-left: 20px; padding-bottom: 15px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height:1.3;" valign="top" align="left">  
                                 <span style="font-weight:700;"> Beautiful designs</span> — Build logos, posters, ads, packaging, websites, and digital paintings that look just how you envision.          
                               </td>                              
                           </tr>
                           <tr>
-                            <td valign="top" style="padding-left: 22px;">&#8226;</td>
+                            <td class="bullet-point" valign="top" style="padding-left: 22px;">&#8226;</td>
                             <td style="padding-left: 20px; padding-bottom: 15px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height:1.3;">
                                 <span style="font-weight:700;">Incredible photos</span> — Capture, edit, and share photos that express your ideas and creativity.
                             </td>
                           </tr>
                           <tr>
-                            <td valign="top" style="padding-left: 22px;">&#8226;</td>
+                            <td class="bullet-point" valign="top" style="padding-left: 22px;">&#8226;</td>
                             <td style="padding-left: 20px; padding-bottom: 15px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height:1.3;">
                                 <span style="font-weight:700;">Amazing videos</span> — Take your footage further for film, TV, Youtube, and more. Easily add graphics, effects, animation, and pro-quality audio to wow your audiences.
                             </td>
                           </tr>
                           <tr>
-                            <td valign="top" style="padding-left: 22px;">&#8226;</td>
+                            <td class="bullet-point" valign="top" style="padding-left: 22px;">&#8226;</td>
                             <td style="padding-left: 20px; padding-bottom: 40px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; line-height:1.3;">
                                 <span style="font-weight:700;">Engaging user experiences</span> — Design, prototype, and build modern, responsive websites as well as mobile apps and other experiences that tell your story.
                             </td>
