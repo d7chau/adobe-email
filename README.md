@@ -1,6 +1,6 @@
-# Introduction to Promotional Email
+# Introduction to Adobe Email
 
-[![](https://github.com/d7chau/promotional-email/blob/main/img/adobe-thumbnail.png)](https://d7chau.github.io/promotional-email/)
+[![](https://github.com/d7chau/promotional-email/blob/main/img/adobe-thumbnail.png)](https://d7chau.github.io/adobe-email/)
 
 ## Description
 
@@ -17,7 +17,7 @@ Email was tested using Litmus in all major email clients including:
 
 ## Live Demo
 
-https://d7chau.github.io/promotional-email/
+https://d7chau.github.io/adobe-email/
 
 ## Authors
 
