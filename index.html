@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en"> <!-- (XML / Microsoft VML / Microsoft Office namespace) - Use specific features of Microsoft Office and compatible with XHTML Standards-->
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="x-apple-disable-message-reformatting"/>
-    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <link rel="icon" type="image/x-icon" href="img/adobe-favicon.ico">  
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> <!-- Set the character set, UTF-8 is a character encoding system -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Controls page dimensions and scaling -->
+    <meta name="x-apple-disable-message-reformatting"/> <!-- Disable auto-scaling for Apple devices -->
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no"> <!-- Makes Phone numbers not appear as hypertext links -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/> <!-- Choose what version of Internet Explorer the page should be rendered as -->
+    <link rel="icon" type="image/x-icon" href="img/adobe-favicon.ico"> <!-- Adds favicon image to webpage -->
+
     <title>Adobe Creative Cloud</title>
+
+    <!-- Fixes scaling issue in Outlook below -->
 
     <!--[if mso]>
     <xml>
@@ -19,12 +22,12 @@
     <![endif]-->
 
     <style>
-      /* Client-specific reset styles. */
+      /* Outlook specific reset styles (extra fixes to make email render properly) */
       body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
       table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
       img { -ms-interpolation-mode: bicubic; }
 
-      /* Fixes addresses turning into links */
+      /* Fixes addresses turning into links for Apple Devices */
       #id1 #id2 a[x-apple-data-detectors]{
         color: inherit !important;
         text-decoration: inherit !important;
@@ -280,7 +283,7 @@
                           This is a marketing email from Adobe Inc, <span class="address">343 Preston St, Ottawa, ON K1S 1N4. </span><a href="#" style= "color: #707070;">Click here</a> to 
                           unsubscribe. Please review the <a href="#" style= "color: #707070;">Adobe Privacy Policy.</a>
                         </p>
-                        <!--[if gte mso 12]><br /> <![endif]-->
+                        <!--[if gte mso 12]><br /> <![endif]--> <!--Gets rid of Horizontal White Lines in Outlook-->
                       </td>
                     </tr>
                     <tr>
@@ -289,7 +292,7 @@
                           To ensure email delivery, add <a href ="mailto:mail@mail.adobe.com" style= "color: #707070;">mail@mail.adobe.com</a> to your address book, 
                           contacts, or safe sender list.
                         </p>
-                        <!--[if gte mso 12]><br /> <![endif]-->
+                        <!--[if gte mso 12]><br /> <![endif]-->  <!--Gets rid of Horizontal White Lines in Outlook-->
                       </td>
                     </tr>
                   </table>
